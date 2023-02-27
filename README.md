@@ -10,6 +10,7 @@
 - [Strapi documentation](https://docs.strapi.io)
 - [Strapi community on Discord](https://discord.strapi.io)
 - [Strapi news on Twitter](https://twitter.com/strapijs)
+- [Fix by TheBit Research](https://thebitresearch.com)
 
 ## Installation
 
@@ -36,7 +37,7 @@ module.exports = ({ env }) => ({
   // ...
   upload: {
     config: {
-      provider: 'strapi-provider-upload-aws-cloudfront',
+      provider: 'strapi-provider-upload-aws-cloudfront-fix',
       providerOptions: {
         accessKeyId: env('AWS_ACCESS_KEY_ID'),
         secretAccessKey: env('AWS_ACCESS_SECRET'),
@@ -79,6 +80,17 @@ module.exports = [
 ];
 ```
 
+#Add the required environment variables to your .env file
+
+```
+AWS_ACCESS_KEY_ID=
+AWS_ACCESS_SECRET=
+AWS_REGION=
+AWS_BUCKET=
+AWS_CLOUDFRONT=
+```
+
+
 ## Required AWS Policy Actions
 
 These are the minimum amount of permissions needed for this provider to work.
@@ -89,3 +101,5 @@ These are the minimum amount of permissions needed for this provider to work.
   "s3:GetObject"
 ],
 ```
+
+
