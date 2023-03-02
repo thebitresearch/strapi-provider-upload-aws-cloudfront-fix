@@ -1,4 +1,4 @@
-# strapi-provider-upload-aws-cloudfront
+# strapi-provider-upload-aws-cloudfront-fix
 
 ## Resources
 
@@ -16,10 +16,10 @@
 
 ```bash
 # using yarn
-yarn add strapi-provider-upload-aws-cloudfront
+yarn add strapi-provider-upload-aws-cloudfront-fix
 
 # using npm
-npm install strapi-provider-upload-aws-cloudfront --save
+npm install strapi-provider-upload-aws-cloudfront-fix --save
 ```
 
 ## Configurations
@@ -69,8 +69,8 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'your Cloudfront Distribution domain name'],
-          'media-src': ["'self'", 'data:', 'blob:', 'your Cloudfront Distribution domain name'],
+          'img-src': ["'self'", 'data:', 'blob:', `${process.env.AWS_CLOUDFRONT}`],
+          'media-src': ["'self'", 'data:', 'blob:', `${process.env.AWS_CLOUDFRONT}`],
           upgradeInsecureRequests: null,
         },
       },
