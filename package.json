@@ -1,6 +1,6 @@
 {
   "name": "strapi-provider-upload-aws-cloudfront-fix",
-  "version": "4.7.2",
+  "version": "4.7.3",
   "description": "AWS Cloudfront provider for strapi upload",
   "keywords": [
     "upload",
@@ -8,7 +8,7 @@
     "cloudfront",
     "strapi"
   ],
-  "homepage": "https://strapi.io",
+  "homepage": "https://thebitresearch.com",
   "bugs": {
     "url": "https://github.com/strapi/strapi/issues"
   },
