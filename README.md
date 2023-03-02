@@ -10,7 +10,7 @@
 - [Strapi documentation](https://docs.strapi.io)
 - [Strapi community on Discord](https://discord.strapi.io)
 - [Strapi news on Twitter](https://twitter.com/strapijs)
-- [Fix by TheBit Research](https://thebitresearch.com)
+- [TheBit Research](https://thebitresearch.com)
 
 ## Installation
 
